@@ -1,0 +1,17 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  right: 100%;
+  padding: 5px;
+  background-color: #f59e0b;
+  color: black;
+  border-radius: 5px;
+  white-space: nowrap;
+}
