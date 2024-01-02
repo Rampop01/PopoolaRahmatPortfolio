@@ -11,14 +11,14 @@ import { FaFigma } from "react-icons/fa";
 function MySkills() {
   return (
     <div>
-      <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit mt-20 lg:mt-40">
+      <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1 mt-24 lg:mt-40">
         <GiSkills className="mb-4 text-white mt-0.5" />
         <h1 className="text-white ">SKILLS</h1>
       </div>
-      <h1 className="text-4xl mb-6 mt-6 ml-4">
+      <h1 className="text-4xl mb-6 mt-6">
         My<span className="text-[#f59e0b]"> Advantages</span>
       </h1>
-      <div className="w-[100%] justify-center grid lg:grid-cols-4 grid-cols-3 lg:gap-y-8 ">
+      <div className="w-[100%] justify-center grid lg:grid-cols-4 grid-cols-3 lg:gap-y-8 lg:pr-56 gap-4">
         {/* <div className="flex gap-8 flex-wrap"> */}
         <div className="flex flex-col  items-center">
           <AiOutlineHtml5 className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />

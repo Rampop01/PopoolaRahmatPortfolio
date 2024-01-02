@@ -21,7 +21,11 @@ function EducationTimeLine() {
             <TimelineIcon className="p-2">
               <HomeIcon className="h-4 w-4" />
             </TimelineIcon>
-            <Typography variant="h5" color="blue-gray">
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="lg:text-[24px]"
+            >
               Ahmadu Bello University, Kaduna
             </Typography>
           </TimelineHeader>
@@ -37,12 +41,19 @@ function EducationTimeLine() {
             <TimelineIcon className="p-2">
               <BellIcon className="h-4 w-4" />
             </TimelineIcon>
-            <Typography variant="h5" color="blue-gray">
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="lg:text-[24px]"
+            >
               TIIDELab Initiative
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
-            <Typography color="gray" className="font-normal text-slate-400">
+            <Typography
+              color="gray"
+              className="font-normal text-slate-400 lg:text-[18px]"
+            >
               Frontend Development. <br></br> 2023 - 2023
             </Typography>
           </TimelineBody>
@@ -53,12 +64,19 @@ function EducationTimeLine() {
             <TimelineIcon className="p-2">
               <CurrencyDollarIcon className="h-4 w-4" />
             </TimelineIcon>
-            <Typography variant="h5" color="blue-gray">
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="lg:text-[24px]"
+            >
               Modelak College Of Art & Sciences.
             </Typography>
           </TimelineHeader>
           <TimelineBody>
-            <Typography color="gray" className="font-normal text-slate-400">
+            <Typography
+              color="gray"
+              className="font-normal text-slate-400 lg:text-[18px]"
+            >
               Science<br></br> 2008 - 2013
             </Typography>
           </TimelineBody>

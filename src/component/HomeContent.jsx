@@ -4,7 +4,7 @@ import { IoHomeOutline } from "react-icons/io5";
 function HomeContent() {
   return (
     <div className="bg-black w-fit bg-black ">
-      <div className="flex gap-2 border border-white p-2 px-6  h-8 rounded-full text-xs w-fit mb-8">
+      <div className="flex gap-2 border border-white p-2 px-6  h-8 rounded-full text-xs w-fit mb-8 mt-8">
         <IoHomeOutline className="text-white mt-0.5" />
         <h1 className="text-white">INTRODUCE</h1>
       </div>

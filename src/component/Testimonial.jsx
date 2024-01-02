@@ -36,7 +36,7 @@ function Testimonial() {
 
   return (
     <div>
-      <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1 mt-40">
+      <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1 mt-24 lg:mt-40">
         <RiSpeakLine className="mb-4 text-white mt-0.5" />
         <h1 className="text-white ">TESTIMONIAL</h1>
       </div>
@@ -44,7 +44,10 @@ function Testimonial() {
         What People<span className="text-[#f59e0b]"> Say</span>
       </h1>
       {currentTestimonials.map((testimonial, index) => (
-        <div key={index} className="border border-white lg:p-8 mt-4">
+        <div
+          key={index}
+          className="border border-white lg:p-8 mt-4 lg:w-[80%] p-4"
+        >
           <div className="flex text-center gap-4 ">
             <img
               className="w-12 h-12 object-cover rounded-full"
@@ -56,12 +59,12 @@ function Testimonial() {
               <p className="text-slate-400">{testimonial.position}</p>
             </div>
           </div>
-          <p className="mt-4">"{testimonial.content}"</p>
+          <p className="mt-4 lg:text-[18px]">"{testimonial.content}"</p>
         </div>
       ))}
 
       {/* Pagination */}
-      <div className="mt-4 flex justify-center">
+      <div className="mt-4 flex justify-center lg:mr-28">
         {Array.from(
           { length: Math.ceil(testimonialsData.length / itemsPerPage) },
           (_, i) => (

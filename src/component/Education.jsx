@@ -7,7 +7,7 @@ function Education() {
   return (
     <div>
       <div>
-        <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1 mt-40">
+        <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1 mt-24 lg:mt-40">
           <IoSchoolOutline className="mb-4 text-white mt-0.5" />
           <h1 className="text-white">CERTIFICATION</h1>
         </div>

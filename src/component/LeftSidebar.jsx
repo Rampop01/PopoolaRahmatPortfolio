@@ -55,44 +55,45 @@ import { RiSpeakLine } from "react-icons/ri";
 import { MdOutlineContactMail } from "react-icons/md";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="lg:border lg:border-2 lg:border-solid lg:border-[#f59e0b] lg:rounded-full flex gap-6 lg:gap-4 lg:w-4 p-8 pl-4 lg:fixed bottom-0 lg:right-0 lg:flex-col">
+    <div className="lg:border lg:border-2 lg:border-[#f59e0b] lg:rounded-full flex gap-6 lg:gap-2 lg:w-4 p-8 pl-4 lg:fixed bottom-24 lg:right-4 lg:flex-col">
       <button className="tooltip" title="Home">
-        <IoHomeOutline className="mb-4" />
+        <IoHomeOutline className="lg:mb-2" />
       </button>
 
-      <button className="tooltip" title="About">
-        <FaRegUser className="mb-4 text-white" />
+      <button to="about" className="tooltip" title="About">
+        <FaRegUser className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Certification">
-        <IoSchoolOutline className="mb-4 text-white" />
+        <IoSchoolOutline className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Services">
-        <GrServices className="mb-4 text-white" />
+        <GrServices className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Skills">
-        <GiSkills className="mb-4 text-white" />
+        <GiSkills className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Projects">
-        <FaProjectDiagram className="mb-4 text-white" />
+        <FaProjectDiagram className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Testimonial">
-        <RiSpeakLine className="mb-4 text-white" />
+        <RiSpeakLine className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Contact">
-        <MdOutlineContactMail className="mb-4 text-white" />
+        <MdOutlineContactMail className="lg:mb-2 text-white" />
       </button>
 
       <button className="tooltip" title="Scroll to Top">
-        <FaRegArrowAltCircleUp className="text-white mb-4" />
+        <FaRegArrowAltCircleUp className="text-white lg:mb-2" />
       </button>
     </div>
   );

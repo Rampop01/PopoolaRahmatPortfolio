@@ -13,7 +13,7 @@ function About() {
           Simplicity And Fueled
           <span className="text-[#f59e0b]"> By Passion</span>
         </h1>
-        <p>
+        <p className="lg:text-[18px]">
           Specialize in designing user-friendly and responsive websites. My
           services are tailored to meet the specific demands of users, and I
           take great pride in consistently delivering projects on time without

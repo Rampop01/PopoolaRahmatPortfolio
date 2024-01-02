@@ -15,10 +15,10 @@ import HomeContent from "./HomeContent";
 
 function Home() {
   return (
-    <div className="bg-black text-white mx-4 lg:pt-3  ">
+    <div className="bg-black text-white lg:pt-3 mr-12 ml-4">
       <div className="bg-black lg:flex space-x-8 ">
         <AboutMeCard className="lg:h-[100vh]" />
-        <div className="lg:pl-[25%] lg:pr-[45px] lg:pt-8 ">
+        <div className="lg:pl-[35%] lg:pr-[80px] lg:pt-8 ">
           <HomeContent />
           <About />
           <Education />
