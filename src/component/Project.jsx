@@ -27,7 +27,7 @@ function Project() {
           </p>
           <div className="flex gap-32">
             <h1 className=" py-2     ">ReactJs</h1>
-            <h1 className="px-6 py-2  ">TailwindCSS</h1>
+            <h1 className="px-4 py-2  ">TailwindCSS</h1>
           </div>
           <Link to="https://thrive-react.vercel.app/">
             <button className="bg-[#f59e0b] w-72 flex items-center justify-center py-3 gap-2 hover:bg-[#fef9c3]">
@@ -50,7 +50,7 @@ function Project() {
           </p>
           <div className="flex gap-32">
             <h1 className=" py-2     ">ReactJs</h1>
-            <h1 className="px-6 py-2  ">TailwindCSS</h1>
+            <h1 className="px-4 py-2  ">TailwindCSS</h1>
           </div>
           <Link to="https://flickcars.vercel.app/">
             <button className="bg-[#f59e0b] w-72 flex items-center justify-center py-3 gap-2 hover:bg-[#fef9c3]">

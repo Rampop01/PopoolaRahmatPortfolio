@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function AboutMeCard() {
   return (
     <div className="lg:fixed ml-8 -mr-2 lg:ml-0">
-      <div className=" bg-black  rounded-2xl border border-[#f59e0b] border-2  ">
+      <div className=" bg-black  rounded-2xl border border-[#f59e0b] border-2 p-4 ">
         <div className="flex flex-col text-center justify-center items-center">
           <h1 className="text-[#f59e0b] mt-6 mb-6 font-bold text-2xl">
             Rampop&reg;
@@ -35,8 +35,8 @@ function AboutMeCard() {
             </Link>
           </div>
           <Link to="https://drive.google.com/file/d/1EHvyrr8bXtusX8jzY9HCe2dJb-SxNtwy/view?usp=drive_link">
-            <button className=" flex gap-2 bg-[#f59e0b] border rounded-full px-20 py-2  m-5 text-white font-bold cursor-pointer mt-20 hover:bg-[#facc15] items-center justify-center ">
-              <AiOutlineMail className="text-black font-bold text-2xl " />
+            <button className=" flex gap-2 bg-[#f59e0b] border rounded-full px-16 py-2  mb-6 text-white font-bold cursor-pointer mt-20 hover:bg-[#facc15] items-center justify-center ">
+              <AiOutlineMail className="text-black font-bold text-2xl" />
               <span className="text-black font-bold ">HIRE ME</span>
             </button>
           </Link>

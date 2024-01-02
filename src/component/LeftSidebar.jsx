@@ -59,7 +59,7 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="lg:border lg:border-2 lg:border-[#f59e0b] lg:rounded-full flex gap-6 lg:gap-2 lg:w-4 p-8 pl-4 lg:fixed bottom-24 lg:right-4 lg:flex-col">
+    <div className="lg:border lg:border-2 lg:border-[#f59e0b] lg:rounded-full flex gap-4 lg:gap-2  lg:w-4 p-8  lg:pl-4 pl-0  lg:fixed bottom-24 lg:right-4 lg:flex-col items-center justify-center">
       <button className="tooltip" title="Home">
         <IoHomeOutline className="lg:mb-2" />
       </button>
