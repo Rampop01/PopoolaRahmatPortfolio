@@ -35,7 +35,7 @@ function EducationTimeLine() {
             </Typography>
           </TimelineBody>
         </TimelineItem>
-        <div className="connector-line" />
+        <div className="" />
         <TimelineItem>
           <TimelineHeader>
             <TimelineIcon className="p-2">

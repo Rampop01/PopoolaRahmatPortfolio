@@ -23,7 +23,7 @@ function HomeContent() {
           user-centric.
         </p>
       </div>
-      <div className="flex gap-20 mt-36 ">
+      <div className="flex gap-20 lg:mt-36 mt-20 -mb-16 ">
         <div>
           <h1 className="text-6xl text-[#f59e0b]">1+</h1>
           <p className="text-slate-400">

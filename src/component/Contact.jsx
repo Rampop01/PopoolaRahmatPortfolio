@@ -36,7 +36,7 @@ const ContactForm = () => {
     });
   };
   return (
-    <div>
+    <div className="mb-[4rem]" id="contact">
       <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1  mt-24 lg:mt-40">
         <MdOutlineContactMail className="mb-4 text-white mt-0.5" />
         <h1 className="text-white"> CONTACT</h1>
@@ -72,7 +72,7 @@ const ContactForm = () => {
             required
           />
         </div>
-        <label>Message</label>
+        {/* <label>Message</label> */}
         <textarea
           id="message"
           name="message"

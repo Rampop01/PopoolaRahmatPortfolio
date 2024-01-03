@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Project() {
   return (
-    <div className="">
+    <div className="" id="project">
       <div className="flex gap-2 border border-white p-2 px-6  m-4 h-8 rounded-full text-xs w-fit ml-1 mt-24 lg:mt-40">
         <FaProjectDiagram className="mb-4 text-white mt-0.5" />
         <h1 className="text-white ">PROJECTS</h1>
@@ -13,7 +13,7 @@ function Project() {
       <h1 className="text-4xl  mb-6 mt-6 ">
         Featured And Personal <span className="text-[#f59e0b]">Projects</span>
       </h1>
-      <div className="flex flex-col lg:flex-row gap-2">
+      <div className="flex flex-wrap gap-2 md:gap-6">
         <div className="mb-8 lg:mb-0">
           <img
             className="w-72 h-40 object-fill"

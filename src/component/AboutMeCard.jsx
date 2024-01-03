@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 function AboutMeCard() {
   return (
-    <div className="lg:fixed ml-8 -mr-2 lg:ml-0">
+    <div className="lg:fixed ml-8 -mr-2 lg:ml-0 mt-2 lg:mt-0">
       <div className=" bg-black  rounded-2xl border border-[#f59e0b] border-2 p-4 ">
         <div className="flex flex-col text-center justify-center items-center">
           <h1 className="text-[#f59e0b] mt-6 mb-6 font-bold text-2xl">
