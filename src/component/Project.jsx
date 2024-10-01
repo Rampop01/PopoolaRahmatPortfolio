@@ -2,6 +2,7 @@ import React from "react";
 import { FaProjectDiagram } from "react-icons/fa";
 import { LiaEyeSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import plomb from "../component/plomb.png";
 
 function Project() {
   return (
@@ -53,6 +54,27 @@ function Project() {
             <h1 className="px-4 py-2  ">TailwindCSS</h1>
           </div>
           <Link to="https://flickcars.vercel.app/">
+            <button className="bg-[#f59e0b] w-72 flex items-center justify-center py-3 gap-2 hover:bg-[#fef9c3]">
+              <LiaEyeSolid className="text-black font-bold" />
+              <h1 className="text-black font-bold ">Preview</h1>
+            </button>
+          </Link>
+        </div>
+        <div className="">
+          <img className="w-72 h-40 object-fill" src={plomb} alt="plomb" />
+          <h1 className="text-3xl mb-2 mt-2 ">Plomb</h1>
+          <p className="mb-2n text-slate-400">
+            emphasizing the future of Decentralized
+            <br />
+            Voting, how it eliminates rigging,
+            <br /> and improves transparency.
+          </p>
+
+          <div className="flex gap-32">
+            <h1 className=" py-2     ">NextJs</h1>
+            <h1 className="px-4 py-2  ">TailwindCSS</h1>
+          </div>
+          <Link to="https://plomb-dapp.vercel.app">
             <button className="bg-[#f59e0b] w-72 flex items-center justify-center py-3 gap-2 hover:bg-[#fef9c3]">
               <LiaEyeSolid className="text-black font-bold" />
               <h1 className="text-black font-bold ">Preview</h1>

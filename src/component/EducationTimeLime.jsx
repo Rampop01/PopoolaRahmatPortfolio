@@ -81,6 +81,29 @@ function EducationTimeLine() {
             </Typography>
           </TimelineBody>
         </TimelineItem>
+        <div className="connector-line" />
+        <TimelineItem>
+          <TimelineHeader>
+            <TimelineIcon className="p-2 ">
+              <CurrencyDollarIcon className="h-4 w-4 mt-4" />
+            </TimelineIcon>
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="lg:text-[24px] mt-4"
+            >
+              Web3Bridge Advance Web2
+            </Typography>
+          </TimelineHeader>
+          <TimelineBody>
+            <Typography
+              color="gray"
+              className="font-normal text-slate-400 lg:text-[18px]"
+            >
+              Frontend Development<br></br> August(2024) - Till Present
+            </Typography>
+          </TimelineBody>
+        </TimelineItem>
       </Timeline>
     </div>
   );

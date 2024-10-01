@@ -7,6 +7,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
 import { VscGithub } from "react-icons/vsc";
 import { FaFigma } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 
 function MySkills() {
   return (
@@ -42,12 +43,16 @@ function MySkills() {
           <h1 className="mt-4 text-center text-slate-400">ReactJs</h1>
         </div>
         <div className="flex flex-col items-center">
-          <VscGithub className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
-          <h1 className="mt-4 text-center text-slate-400">Github</h1>
+          <SiNextdotjs className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">Nextjs</h1>
         </div>
         <div className="flex flex-col items-center">
           <FaFigma className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
           <h1 className="mt-4 text-center text-slate-400">Figma</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <VscGithub className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">Github</h1>
         </div>
       </div>
     </div>
