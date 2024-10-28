@@ -3,6 +3,7 @@ import { FaProjectDiagram } from "react-icons/fa";
 import { LiaEyeSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import plomb from "../component/plomb.png";
+import craftorium from "../component/craftorium.png";
 
 function Project() {
   return (
@@ -75,6 +76,32 @@ function Project() {
             <h1 className="px-4 py-2  ">TailwindCSS</h1>
           </div>
           <Link to="https://plomb-dapp.vercel.app">
+            <button className="bg-[#f59e0b] w-72 flex items-center justify-center py-3 gap-2 hover:bg-[#fef9c3]">
+              <LiaEyeSolid className="text-black font-bold" />
+              <h1 className="text-black font-bold ">Preview</h1>
+            </button>
+          </Link>
+        </div>
+        <div className="">
+          <img
+            className="w-72 h-40 object-fill"
+            src={craftorium}
+            alt="craftorium"
+          />
+          <h1 className="text-3xl mb-2 mt-2 ">Craftorium</h1>
+          <p className="mb-2n text-slate-400">
+            A multi-vendor application Each item is
+            <br />
+            handcrafted by skilled artisans,ensuring
+            <br />
+            top-notch quality in every stitch
+          </p>
+
+          <div className="flex gap-32">
+            <h1 className=" py-2     ">NextJs</h1>
+            <h1 className="px-4 py-2  ">TailwindCSS</h1>
+          </div>
+          <Link to="https://craftorium.vercel.app">
             <button className="bg-[#f59e0b] w-72 flex items-center justify-center py-3 gap-2 hover:bg-[#fef9c3]">
               <LiaEyeSolid className="text-black font-bold" />
               <h1 className="text-black font-bold ">Preview</h1>
