@@ -14,14 +14,7 @@ function About() {
           <span className="text-[#f59e0b]"> By Passion</span>
         </h1>
         <p className="lg:text-[18px]">
-          Specialize in designing user-friendly and responsive websites. My
-          services are tailored to meet the specific demands of users, and I
-          take great pride in consistently delivering projects on time without
-          any delays or disappointments. Effective communication,
-          problem-solving abilities, and resilience are my strong suits,
-          enabling me to comprehend my clients' needs thoroughly and provide
-          successful outcomes.
-        </p>
+        I specialize in designing user-friendly and responsive websites tailored to meet the specific needs of users. I take great pride in consistently delivering projects on time without delays or disappointments. My strong communication, problem-solving skills, and resilience enable me to fully understand client needs and deliver successful outcomes. Beyond traditional web development, I’m deeply involved in the Web3 ecosystem, building decentralized applications and writing secure smart contracts using Solidity and Rust. I also work with Rust-based frameworks to create scalable, high-performance blockchain solutions that bridge functionality between front-end interfaces and decentralized networks.        </p>
       </div>
     </div>
   );

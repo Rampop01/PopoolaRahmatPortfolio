@@ -12,9 +12,20 @@ function Project() {
         <FaProjectDiagram className="mb-4 text-white mt-0.5" />
         <h1 className="text-white ">PROJECTS</h1>
       </div>
-      <h1 className="text-4xl  mb-6 mt-6 ">
+      <h1 className="text-4xl  mb-2 mt-6 ">
         Featured And Personal <span className="text-[#f59e0b]">Projects</span>
       </h1>
+      <p className="text-slate-400 mb-4 text-lg">
+        To see my recently updated projects, visit my{" "}
+        <a
+          href="https://github.com/Rampop01?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#f59e0b] hover:underline"
+        >
+          GitHub
+        </a>
+      </p>
       <div className="flex flex-wrap gap-2 md:gap-6">
         <div className="mb-8 lg:mb-0">
           <img

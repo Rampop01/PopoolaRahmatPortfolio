@@ -7,7 +7,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
 import { VscGithub } from "react-icons/vsc";
 import { FaFigma } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiRust, SiSolidity, SiTypescript } from "react-icons/si";
 
 function MySkills() {
   return (
@@ -21,7 +21,31 @@ function MySkills() {
       </h1>
       <div className="w-[100%] justify-center grid lg:grid-cols-4 grid-cols-3 lg:gap-y-8 lg:pr-56 gap-4">
         {/* <div className="flex gap-8 flex-wrap"> */}
-        <div className="flex flex-col  items-center">
+        <div className="flex flex-col items-center">
+          <SiRust className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">Rust</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <SiSolidity className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">Solidity</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <SiTypescript className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">TypeScript</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <TbBrandJavascript className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">JavaScript</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <SiNextdotjs className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">Nextjs</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <GrReactjs className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
+          <h1 className="mt-4 text-center text-slate-400">ReactJs</h1>
+        </div>
+        <div className="flex flex-col items-center">
           <AiOutlineHtml5 className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
           <h1 className="mt-4 text-center text-slate-400">HTML</h1>
         </div>
@@ -29,22 +53,9 @@ function MySkills() {
           <TbBrandCss3 className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
           <h1 className="mt-4 text-center text-slate-400">CSS</h1>
         </div>
-
         <div className="flex flex-col items-center">
           <BiLogoTailwindCss className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
           <h1 className="mt-4 text-center text-slate-400">TailwindCSS</h1>
-        </div>
-        <div className="flex flex-col items-center">
-          <TbBrandJavascript className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
-          <h1 className="mt-4 text-center text-slate-400">JavaScript</h1>
-        </div>
-        <div className="flex flex-col items-center">
-          <GrReactjs className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
-          <h1 className="mt-4 text-center text-slate-400">ReactJs</h1>
-        </div>
-        <div className="flex flex-col items-center">
-          <SiNextdotjs className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />
-          <h1 className="mt-4 text-center text-slate-400">Nextjs</h1>
         </div>
         <div className="flex flex-col items-center">
           <FaFigma className="border border-2xl border-white text-8xl p-4 rounded-b-3xl " />

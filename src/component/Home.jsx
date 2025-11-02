@@ -1,8 +1,6 @@
 import React from "react";
 import AboutMeCard from "./AboutMeCard";
 import LeftSidebar from "./LeftSidebar";
-import { IoHomeOutline } from "react-icons/io5";
-import { PiHandWavingLight } from "react-icons/pi";
 
 import About from "./About";
 import Education from "./Education";

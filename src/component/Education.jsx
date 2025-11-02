@@ -1,7 +1,6 @@
 import React from "react";
 import { IoSchoolOutline } from "react-icons/io5";
 import EducationTimeLine from "./EducationTimeLime";
-import Eduline from "./Eduline";
 
 function Education() {
   return (

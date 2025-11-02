@@ -10,6 +10,8 @@ import {
   HomeIcon,
   BellIcon,
   CurrencyDollarIcon,
+  AcademicCapIcon,
+  CodeBracketIcon,
 } from "@heroicons/react/24/solid";
 
 function EducationTimeLine() {
@@ -35,7 +37,7 @@ function EducationTimeLine() {
             </Typography>
           </TimelineBody>
         </TimelineItem>
-        <div className="" />
+        <div className="connector-line" />
         <TimelineItem>
           <TimelineHeader>
             <TimelineIcon className="p-2">
@@ -54,7 +56,7 @@ function EducationTimeLine() {
               color="gray"
               className="font-normal text-slate-400 lg:text-[18px]"
             >
-              Frontend Development. <br></br> 2023 - 2023
+              Frontend Development. <br></br> June 2024 - December 2024
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -69,38 +71,55 @@ function EducationTimeLine() {
               color="blue-gray"
               className="lg:text-[24px]"
             >
-              Modelak College Of Art & Sciences.
+              Web3Bridge Advance Web2
             </Typography>
           </TimelineHeader>
-          <TimelineBody>
+          <TimelineBody className="pb-8">
             <Typography
               color="gray"
               className="font-normal text-slate-400 lg:text-[18px]"
             >
-              Science<br></br> 2008 - 2013
+              Frontend Development<br></br> May 2024 - August 2024
             </Typography>
           </TimelineBody>
         </TimelineItem>
         <div className="connector-line" />
         <TimelineItem>
           <TimelineHeader>
-            <TimelineIcon className="p-2 ">
-              <CurrencyDollarIcon className="h-4 w-4 mt-4" />
+            <TimelineIcon className="p-2">
+              <AcademicCapIcon className="h-4 w-4" />
             </TimelineIcon>
             <Typography
               variant="h5"
               color="blue-gray"
-              className="lg:text-[24px] mt-4"
+              className="lg:text-[24px]"
             >
-              Web3Bridge Advance Web2
+              Web3Bridge Solidity
+            </Typography>
+          </TimelineHeader>
+          <TimelineBody className="pb-8">
+            <Typography color="gray" className="font-normal text-slate-400">
+              Solidity Development.<br></br> January 2025 - May 2025
+            </Typography>
+          </TimelineBody>
+        </TimelineItem>
+        <div className="connector-line" />
+        <TimelineItem>
+          <TimelineHeader>
+            <TimelineIcon className="p-2">
+              <CodeBracketIcon className="h-4 w-4" />
+            </TimelineIcon>
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="lg:text-[24px]"
+            >
+              Web3Bridge Rust Masterclass
             </Typography>
           </TimelineHeader>
           <TimelineBody>
-            <Typography
-              color="gray"
-              className="font-normal text-slate-400 lg:text-[18px]"
-            >
-              Frontend Development<br></br> August(2024) - Till Present
+            <Typography color="gray" className="font-normal text-slate-400">
+              Rust Programming.<br></br> June 2025 - November 2025
             </Typography>
           </TimelineBody>
         </TimelineItem>

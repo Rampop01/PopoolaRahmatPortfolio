@@ -1,13 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { MdOutlineContactMail } from "react-icons/md";
 
 const ContactForm = () => {
   const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     // Check if any of the required fields are empty
     const name = form.current.user_name.value.trim();
@@ -15,32 +22,64 @@ const ContactForm = () => {
     const message = form.current.message.value.trim();
 
     if (!name || !email || !message) {
+      setIsSubmitting(false);
       Swal.fire({
         title: "Error!",
         text: "Please fill in all fields.",
         icon: "error",
         confirmButtonColor: "#f59e0b",
       });
-      return; // Exit the function if any field is empty
+      return;
     }
 
+    // Validate email format
+    if (!validateEmail(email)) {
+      setIsSubmitting(false);
+      Swal.fire({
+        title: "Invalid Email!",
+        text: "Please enter a valid email address.",
+        icon: "error",
+        confirmButtonColor: "#f59e0b",
+      });
+      return;
+    }
+
+    // Include sender's email in the message body for visibility
+    const messageWithSenderInfo = `From: ${name} <${email}>\n\n${message}`;
+
     emailjs
-      .sendForm(
-        "service_r1cti9j",
+      .send(
+        "service_2synxgp",
         "template_bx38xro",
-        form.current,
+        {
+          user_name: name,
+          user_email: email,
+          message: messageWithSenderInfo,
+        },
         "iW-c7jNINgutvbSkn"
       )
       .then(
         (result) => {
-          console.log(result.text);
-          alertUser(); // Call alertUser only after a successful email send
+          setIsSubmitting(false);
+          form.current.reset(); // Reset form after successful submission
+          alertUser();
         },
         (error) => {
-          console.log(error.text);
+          setIsSubmitting(false);
+          
+          // Handle specific Gmail API errors
+          let errorMessage = "Something went wrong. Please try again.";
+          if (error.text && error.text.includes("Invalid grant")) {
+            errorMessage = "Email service connection issue. Please contact me directly at Popoolarahmat@gmail.com";
+          } else if (error.text) {
+            errorMessage = error.text;
+          } else if (error.message) {
+            errorMessage = error.message;
+          }
+          
           Swal.fire({
             title: "Error!",
-            text: "Something went wrong. Please try again.",
+            text: errorMessage,
             icon: "error",
             confirmButtonColor: "#f59e0b",
           });
@@ -52,7 +91,7 @@ const ContactForm = () => {
     localStorage.setItem("key", "data");
     Swal.fire({
       title: "Successful",
-      text: "Message sent... Check Email For Response",
+      text: "Message sent",
       color: "#f59e0b",
       confirmButtonColor: "#f59e0b",
       icon: "success",
@@ -80,29 +119,33 @@ const ContactForm = () => {
             id="name"
             name="user_name"
             placeholder="Enter your name"
-            className="p-3 h-[40px] w-[50%] lg:w-[100%] bg-[#FFFFFF] rounded-md border-2 border-[#343D68] focus:shadow-none focus:outline-none focus:border-2 focus:border-[#f59e0b] focus:bg-white"
+            className="p-3 h-[40px] w-[50%] lg:w-[100%] bg-[#FFFFFF] text-black rounded-md border-2 border-[#343D68] focus:shadow-none focus:outline-none focus:border-2 focus:border-[#f59e0b] focus:bg-white placeholder:text-gray-500"
             required
+            disabled={isSubmitting}
           />
           <input
-            type="text"
+            type="email"
             id="email"
             name="user_email"
             placeholder="Enter email address"
-            className="p-3 h-[40px] w-[50%] lg:w-[100%] bg-[#FFFFFF] rounded-md border-2 border-[#343D68] focus:shadow-none focus:outline-none focus:border-2 focus:border-[#f59e0b] focus:bg-white"
+            className="p-3 h-[40px] w-[50%] lg:w-[100%] bg-[#FFFFFF] text-black rounded-md border-2 border-[#343D68] focus:shadow-none focus:outline-none focus:border-2 focus:border-[#f59e0b] focus:bg-white placeholder:text-gray-500"
             required
+            disabled={isSubmitting}
           />
         </div>
         <textarea
           id="message"
           name="message"
           placeholder="write your message"
-          className="w-[100%] h-[140px] p-3 bg-[#FFFFFF] rounded-md border-2 border-[#343D68] focus:shadow-none focus:outline-none focus:border-2 focus:border-[#f59e0b] focus:bg-white"
+          className="w-[100%] h-[140px] p-3 bg-[#FFFFFF] text-black rounded-md border-2 border-[#343D68] focus:shadow-none focus:outline-none focus:border-2 focus:border-[#f59e0b] focus:bg-white placeholder:text-gray-500 resize-none"
           required
+          disabled={isSubmitting}
         />
         <input
           type="submit"
-          value="Send"
-          className="text-black font-bold rounded-md bg-[#f59e0b] w-[100%] h-[40px] flex justify-center items-center gap-2 hover:bg-[#fef9c3] duration-500 mb-2"
+          value={isSubmitting ? "Sending..." : "Send"}
+          disabled={isSubmitting}
+          className="text-black font-bold rounded-md bg-[#f59e0b] w-[100%] h-[40px] flex justify-center items-center gap-2 hover:bg-[#fef9c3] duration-500 mb-2 disabled:opacity-50 disabled:cursor-not-allowed"
         />
       </form>
     </div>

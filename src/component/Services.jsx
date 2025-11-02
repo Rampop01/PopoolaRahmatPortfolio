@@ -23,11 +23,17 @@ function Services() {
           I create digital products with unique ideas using figma
         </p>
       </div>
-      <div className="border border-white p-10 rounded-3xl">
+      <div className="border border-white p-10 rounded-3xl mb-2">
         <h1 className="lg:text-[24px]">Mentorship</h1>
         <p className="text-slate-400 lg:text-[18px]">
           Capacity to apply the knowledge I have gained to positively influence
           my mentee in the field of my expertise
+        </p>
+      </div>
+      <div className="border border-white p-10 rounded-3xl">
+        <h1 className="lg:text-[24px]">Technical Writing</h1>
+        <p className="text-slate-400 lg:text-[18px]">
+          I create clear and comprehensive technical documentation, tutorials, and articles
         </p>
       </div>
     </div>
